@@ -8,11 +8,12 @@ relative_links:
 include:
   - 01.MVC.md
   - 02.Singleton.md
-  - 03.Dependency_Injection.md
+  - 03.Dependency-Injection.md
   - 04.Factory.md
+  - 05.Adapter.md
+  - 07.Active-Record.md
+  - 08.Observer.md
+  - 09.Strategy.md
+  - 10.Decorator.md
+  - 11.Chain-of-Command.md
   - LICENSE.md
-  - COPYING.md
-  - CODE_OF_CONDUCT.md
-  - CONTRIBUTING.md
-  - ISSUE_TEMPLATE.md
-  - PULL_REQUEST_TEMPLATE.md

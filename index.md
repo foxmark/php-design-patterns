@@ -1,9 +1,13 @@
 # PHP Design Patterns
 
-- [01. MVC](01.MVC.md)
-- [02. Singleton](02.Singleton.md)
-- [03. Dependency Injection](03.Dependency_Injection.md)
-- [04. Factory](04.Factory.md)
-
-
-[Home](index.md)
+- [MVC](01.MVC.md)
+- [Singleton](02.Singleton.md)
+- [Dependency Injection](03.Dependency-Injection.md)
+- [Factory](04.Factory.md)
+- [Adapter](05.Adapter.md)
+- [Facade](06.Facade.md)
+- [Active Record](07.Active-Record.md)
+- [Observer](08.Observer.md)
+- [Strategy](09.Strategy.md)
+- [Decorator](10.Decorator.md)
+- [Chain of Command](11.Chain-of-Command.md)
