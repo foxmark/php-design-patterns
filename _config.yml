@@ -1,5 +1,8 @@
 theme: jekyll-theme-hacker
 title: PHP Design Patterns
+tagline: My Notes
+description: >-
+  My Notes on PHP Design Patterns.
 plugins:
   - jekyll-relative-links
 relative_links:
