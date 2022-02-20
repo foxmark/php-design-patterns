@@ -19,4 +19,5 @@ include:
   - 09.Strategy.md
   - 10.Decorator.md
   - 11.Chain-of-Command.md
+  - markup.md
   - LICENSE.md
