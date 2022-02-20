@@ -1,2 +1,4 @@
 theme: jekyll-theme-hacker
 title: PHP Design Patterns
+plugins:
+  - jekyll-relative-links
