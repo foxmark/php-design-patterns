@@ -9,6 +9,7 @@ include:
   - 01.%20MVC/MVC.md
   - 02.%20Singleton/Singleton.md
   - 03.%20Dependency%20Injection/Dependency_Injection.md
+  - Factory.md
   - LICENSE.md
   - COPYING.md
   - CODE_OF_CONDUCT.md
