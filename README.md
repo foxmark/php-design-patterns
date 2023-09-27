@@ -25,7 +25,7 @@
 
 > A way to let you rewrite *part* of a class from the outside.
 
-```
+```php
 <?php
 // Strategy Interface
 interface PaymentStrategy {
