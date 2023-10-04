@@ -182,3 +182,70 @@ class BoxService
 > The observer pattern defines a one-to-many dependency between objects so that when one object changes state, all of its dependents are notified and updated automatically.
 
 > The observer pattern allows a bunch of objects to be notified by a central object when something happens.
+
+```php
+// Observer interface
+interface Observer {
+    public function update($message);
+}
+
+// Subject (Observable) interface
+interface Subject {
+    public function addObserver(Observer $observer);
+    public function removeObserver(Observer $observer);
+    public function notifyObservers($message);
+}
+
+// Concrete Observer
+class ConcreteObserver implements Observer {
+    private $name;
+
+    public function __construct($name) {
+        $this->name = $name;
+    }
+
+    public function update($message) {
+        echo "Observer {$this->name} received message: $message\n";
+    }
+}
+
+// Concrete Subject (Observable)
+class ConcreteSubject implements Subject {
+    private $observers = [];
+
+    public function addObserver(Observer $observer) {
+        $this->observers[] = $observer;
+    }
+
+    public function removeObserver(Observer $observer) {
+        $key = array_search($observer, $this->observers);
+        if ($key !== false) {
+            unset($this->observers[$key]);
+        }
+    }
+
+    public function notifyObservers($message) {
+        foreach ($this->observers as $observer) {
+            $observer->update($message);
+        }
+    }
+
+    public function doSomething() {
+        // ... some logic ...
+
+        // Notify observers
+        $this->notifyObservers("Subject state has changed.");
+    }
+}
+
+// Client code
+$observer1 = new ConcreteObserver("Observer 1");
+$observer2 = new ConcreteObserver("Observer 2");
+
+$subject = new ConcreteSubject();
+$subject->addObserver($observer1);
+$subject->addObserver($observer2);
+
+$subject->doSomething();
+
+```
